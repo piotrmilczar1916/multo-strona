@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MULTO – Google Ads dla firm remontowych z całej Polski</title>
+<meta name="description" content="Prowadzimy Google Ads dla firm remontowych w całej Polsce. Każde nowe zapytanie od razu trafia do Ciebie, a efekty raportujemy w zleceniach i złotówkach, a nie tylko w kliknięciach.">
+<meta name="theme-color" content="#fafafa">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="MULTO">
+<meta property="og:title" content="Zapytania z Google, które kończą się zleceniem – MULTO">
+<meta property="og:description" content="Google Ads dla firm remontowych w całej Polsce. Efekty raportujemy w zleceniach i złotówkach, a nie tylko w kliknięciach.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"MULTO","description":"Google Ads dla firm remontowych w całej Polsce, z raportowaniem efektów w zleceniach i złotówkach.","areaServed":{"@type":"Country","name":"Polska"},"founder":{"@type":"Person","name":"Piotr Milczarski"},"knowsAbout":["Google Ads","Landing page","Śledzenie konwersji"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fafafa; --paper:#ffffff; --soft:#f2f2f2;
+  --ink:#1a1a1a; --text:#1a1a1a; --muted:#666666; --faint:#767676;
+  --line:#e6e6e6; --line-2:#d6d6d6;
+  --dark:#1a1a1a; --on-dark:#ffffff; --on-dark-muted:rgba(255,255,255,.62); --dark-line:rgba(255,255,255,.12);
+  --brand:#fc5d03; --ok:#1f9d5c;
+  --r-xl:32px; --r-lg:24px; --r-md:16px; --r-sm:12px;
+  --max:1180px; --gutter:clamp(16px,4vw,32px);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:Geist,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.6;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+::selection{background:#fed4ba;color:var(--ink)}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--ink);color:var(--on-dark);padding:10px 16px;border-radius:999px;font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Typografia */
+h1,h2,h3{font-weight:600;letter-spacing:-.03em;line-height:1.08;text-wrap:balance}
+h1{font-size:clamp(2.5rem,6vw,4.6rem);letter-spacing:-.045em;line-height:1.02}
+h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.04em}
+h3{font-size:1.2rem;letter-spacing:-.015em;line-height:1.3}
+p{text-wrap:pretty}
+.lead{font-size:clamp(1.05rem,1.5vw,1.18rem);color:var(--muted);max-width:58ch}
+.kicker{font-size:.9rem;font-weight:500;color:var(--faint);margin-bottom:14px}
+.muted{color:var(--muted)}
+.small{font-size:.86rem;color:var(--faint)}
+
+/* Przyciski */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;font-weight:500;font-size:1rem;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .2s,border-color .2s,transform .2s var(--ease)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--ink);color:var(--on-dark)}
+.btn-primary:hover{background:#000;transform:translateY(-1px)}
+.btn-ghost{border-color:var(--line-2);color:var(--ink);background:transparent}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn-sm{min-height:44px;padding:0 22px;font-size:.95rem}
+
+/* Sekcje */
+.section{padding:clamp(96px,13vw,176px) 0;position:relative}
+.section-head{max-width:740px;margin-bottom:clamp(48px,6vw,80px)}
+.section-head .lead{margin-top:18px}
+
+/* Nagłówek */
+.site-header{position:sticky;top:0;z-index:50;border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s;background:rgba(250,250,250,.82);backdrop-filter:saturate(140%) blur(14px);-webkit-backdrop-filter:saturate(140%) blur(14px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px}
+.logo{display:flex;align-items:center;text-decoration:none;line-height:1}
+.logo-svg{display:block;height:26px;width:auto;aspect-ratio:1416/185}
+.nav-links{display:flex;gap:2px;list-style:none}
+.nav-links a{display:block;padding:8px 14px;border-radius:999px;font-size:.95rem;color:var(--muted);text-decoration:none;transition:color .2s,background .2s}
+.nav-links a:hover{color:var(--ink);background:var(--soft)}
+.nav-links .menu-cta{display:none}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.burger{display:none;width:46px;height:46px;border-radius:50%;border:1px solid var(--line-2);background:transparent;cursor:pointer;place-items:center}
+.burger span{display:block;width:18px;height:2px;background:var(--ink);border-radius:2px;position:relative;transition:transform .25s,background .25s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--ink);border-radius:2px;transition:transform .25s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+
+/* HERO */
+.hero{position:relative;display:flex;min-height:calc(100svh - 76px);padding:clamp(48px,8vw,112px) 0 clamp(24px,3vw,40px);overflow:hidden;isolation:isolate}
+/* Tło: delikatna kratka jak na rysunku technicznym, zanika ku krawędziom */
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(var(--line-2) 1px,transparent 1px),linear-gradient(90deg,var(--line-2) 1px,transparent 1px);background-size:56px 56px;background-position:center top;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 70% 35%,#000 10%,transparent 75%);mask-image:radial-gradient(ellipse 70% 60% at 70% 35%,#000 10%,transparent 75%);opacity:.8}
+.hero>.wrap{display:flex;width:100%}
+.hero-inner{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);grid-template-rows:1fr auto;gap:0 clamp(32px,6vw,96px);width:100%}
+.hero-copy{align-self:center}
+.hero h1{font-size:clamp(2.7rem,5.8vw,5.4rem);letter-spacing:-.058em;line-height:.96;max-width:14ch}
+.hero .lead{margin:28px 0 0;max-width:52ch;font-size:clamp(1.08rem,1.6vw,1.25rem)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}
+.hero-facts{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(40px,5vw,64px);list-style:none;border-top:1px solid var(--line-2);font-size:.97rem;font-weight:500;color:var(--ink)}
+.hero-facts li{display:flex;align-items:center;gap:10px;padding:20px 0 4px}
+.hero-facts li+li{padding-left:clamp(16px,3vw,32px);border-left:1px solid var(--line)}
+.hero-facts svg{width:17px;height:17px;flex:none;color:var(--brand)}
+/* Hero: telefon z powiadomieniami */
+.hero-phone{margin:0;align-self:center;justify-self:center;display:grid;justify-items:center;gap:14px}
+.hero-phone figcaption{font-size:.78rem;color:var(--faint)}
+.phone{width:min(290px,100%);aspect-ratio:9/15.5;padding:10px;border-radius:46px;background:var(--ink);box-shadow:0 50px 90px -50px rgba(0,0,0,.45)}
+.phone-screen{position:relative;height:100%;display:flex;flex-direction:column;gap:10px;padding:54px 12px 16px;border-radius:37px;background:var(--bg)}
+.phone-screen::before{content:"";position:absolute;top:13px;left:50%;width:84px;height:24px;border-radius:999px;background:var(--ink);transform:translateX(-50%)}
+.pn{display:grid;grid-template-columns:34px minmax(0,1fr);gap:10px;align-items:start;padding:12px;border-radius:18px;background:var(--paper);border:1px solid var(--line);box-shadow:0 12px 24px -18px rgba(0,0,0,.25);font-size:.8rem;line-height:1.35}
+.pn-ico{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--on-dark)}
+.pn-ico svg{width:16px;height:16px}
+.pn-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.pn-top b{font-weight:600;font-size:.84rem;letter-spacing:-.01em}
+.pn-top small{color:var(--faint);font-size:.7rem;white-space:nowrap}
+.pn p{margin-top:2px;color:var(--muted)}
+.pn-win{border-color:var(--brand);background:#fff4ec}
+.pn-win .pn-ico{background:var(--brand)}
+.pn-val{font-size:1.15rem;font-weight:600;letter-spacing:-.02em;color:var(--ink)!important}
+/* Karty pojawiają się kolejno co 1,2 s, jednorazowo po załadowaniu */
+.js .pn{opacity:0;animation:rise .7s var(--ease) forwards}
+.js .pn:nth-child(1){animation-delay:.9s}
+.js .pn:nth-child(2){animation-delay:2.1s}
+.js .pn:nth-child(3){animation-delay:3.3s}
+
+/* System – wizualizacja procesu */
+.hv{position:relative;margin:0;font-size:.88rem}
+.hv-steps{position:relative;list-style:none;display:grid;gap:clamp(64px,9vw,120px)}
+/* Oś: szary tor i pomarańczowy postęp, długości ustawia JS na podstawie scrolla */
+.hv-steps::before,.hv-steps::after{content:"";position:absolute;left:14.5px;top:var(--t0,15px);width:1px;height:var(--track,0px);background:var(--line-2)}
+.hv-steps::after{left:14px;width:2px;height:var(--prog,0px);background:var(--brand)}
+.hv-step{position:relative;display:grid;grid-template-columns:30px minmax(0,1fr);gap:clamp(16px,3vw,36px)}
+.js .hv-step{opacity:.3;transition:opacity .5s var(--ease)}
+.js .hv-step.on{opacity:1}
+.hv-num{position:relative;z-index:1;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:.78rem;font-weight:600;background:var(--bg);border:1px solid var(--line-2);color:var(--muted);box-shadow:0 0 0 8px var(--bg);transition:background .4s,border-color .4s,color .4s}
+.hv-step.on .hv-num{background:var(--ink);border-color:var(--ink);color:var(--on-dark)}
+.hv-step.current .hv-num{background:var(--brand);border-color:var(--brand)}
+.hv-step.current .hv-card{border-color:var(--ink);box-shadow:0 18px 40px -24px rgba(0,0,0,.35)}
+.hv-body{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:14px clamp(24px,4vw,48px);align-items:start}
+.hv-text h3{font-size:clamp(1.5rem,2.6vw,2.1rem);letter-spacing:-.035em;margin:-2px 0 12px}
+.hv-text p{color:var(--muted);font-size:1.02rem;max-width:44ch}
+.hv-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-md);transition:border-color .4s,box-shadow .4s}
+/* 1. Wyszukiwarka */
+.hv-search{padding:10px}
+.hv-bar{display:flex;align-items:center;gap:10px;padding:9px 14px;border-radius:999px;background:var(--paper);border:1px solid var(--line);color:var(--ink)}
+.hv-bar svg{width:16px;height:16px;flex:none;color:var(--faint)}
+.query-text::after{content:"";display:inline-block;width:2px;height:1em;margin-left:2px;vertical-align:-2px;background:var(--ink);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.hv-ad{margin-top:8px;padding:0 6px;display:grid;gap:1px}
+.hv-ad small{font-size:.74rem;color:var(--faint)}
+.hv-ad small i{font-style:normal;font-weight:600;color:var(--ink);margin-right:6px}
+.hv-ad b{font-weight:500;color:#1a0dab;font-size:.92rem}
+/* 2. Formularz na stronie */
+.hv-lp{overflow:hidden;background:var(--paper)}
+.hv-chrome{display:flex;align-items:center;gap:10px;padding:8px 12px;border-bottom:1px solid var(--line);background:var(--bg)}
+.dots{display:flex;gap:5px}.dots i{width:8px;height:8px;border-radius:50%;background:var(--line-2)}
+.hv-url{flex:1;max-width:200px;padding:3px 10px;border-radius:999px;background:var(--paper);border:1px solid var(--line);color:var(--faint);font-size:.72rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hv-btn{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;font-size:.74rem;font-weight:500;background:var(--ink);color:var(--on-dark)}
+.hv-btn svg{width:12px;height:12px}
+.hv-form{display:grid;gap:8px;padding:12px 14px 14px}
+.hv-field{display:grid;gap:3px}
+.hv-field small{font-size:.72rem;color:var(--faint)}
+.hv-field i{font-style:normal;font-size:.84rem;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--bg)}
+.hv-form .hv-btn{justify-self:start;margin-top:4px}
+/* 3. Powiadomienia */
+/* Droga zapytania: poziomo na desktopie, pionowo na telefonie */
+.hv-body-wide{grid-template-columns:minmax(0,1fr)}
+.hv-body-wide .hv-text p{max-width:62ch}
+.hv-flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));padding-top:8px}
+.hf-row{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 10px}
+.hf-row:not(:last-child)::after{content:"";position:absolute;top:35px;left:calc(50% + 14px);width:calc(100% - 28px);height:1px;background:var(--line-2)}
+.hf-dash::after{background:none!important;border-top:1px dashed var(--line-2)}
+.hf-time{padding-bottom:12px;line-height:17px;font-size:.75rem;font-weight:500;color:var(--faint);white-space:nowrap;font-variant-numeric:tabular-nums}
+.hf-dot{flex:none;width:12px;height:12px;border-radius:50%;background:var(--ink)}
+.hf-row b{display:block;margin-top:14px;font-size:.92rem;font-weight:500;line-height:1.35;max-width:16ch}
+.hf-row small{display:block;margin-top:2px;color:var(--faint);font-size:.8rem;line-height:1.35}
+.hf-if .hf-dot{background:transparent;border:1.5px dashed var(--ink)}
+.hf-you .hf-time{color:var(--brand)}
+.hf-you .hf-dot{background:var(--brand);box-shadow:0 0 0 5px rgba(252,93,3,.15)}
+.hf-legend{display:flex;justify-content:center;gap:24px;margin-top:28px;font-size:.78rem;color:var(--faint)}
+.hf-legend span{display:inline-flex;align-items:center;gap:8px}
+.hf-legend i{width:8px;height:8px;border-radius:50%;background:var(--ink)}
+.hf-legend-you i{background:var(--brand)}
+/* 4. Arkusz */
+.hv-sheet{background:var(--paper);padding:6px 0}
+.hv-row{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1.15fr) minmax(0,.75fr);gap:10px;align-items:center;padding:9px 14px;font-size:.84rem}
+.hv-row+.hv-row:not(.hv-row-sum){border-top:1px solid var(--soft)}
+.hv-row-head>:last-child{text-align:right}
+.hv-row-sum>:first-child{grid-column:span 2}
+.hv-row-sum{margin-top:2px;border-top:1px solid var(--line);font-weight:600}
+.hv-val{text-align:right;white-space:nowrap;color:var(--faint)}
+b.hv-val{color:var(--ink);font-weight:600}
+.hv-st{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;white-space:nowrap;color:var(--muted)}
+.hv-st::before{content:"";width:7px;height:7px;border-radius:50%;flex:none;background:currentColor}
+.st-new{color:var(--brand)}
+.st-contact,.st-quote{color:var(--ink)}
+.st-quote::before{background:transparent;border:1.5px solid currentColor}
+.st-win{color:var(--ok);font-weight:600}
+.st-lost{color:var(--faint);text-decoration:line-through}
+.hv-note{margin-top:10px;font-size:.74rem;color:var(--faint)}
+.hv-feedback{display:flex;gap:10px;align-items:flex-start;margin-top:16px;padding-top:16px;border-top:1px solid var(--line);font-size:.94rem!important}
+.hv-feedback svg{width:17px;height:17px;flex:none;margin-top:3px;color:var(--brand)}
+.hv-row-head{font-size:.72rem;color:var(--faint);border-bottom:1px solid var(--line)}
+.hv-foot{margin-top:clamp(40px,5vw,64px);font-size:.74rem;color:var(--faint)}
+
+/* Problem */
+.pains{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.pain{padding:36px 32px 8px 0}
+.pain+.pain{padding-left:32px;border-left:1px solid var(--line)}
+.pain h3{margin-bottom:10px;font-size:1.3rem}
+.pain p{color:var(--muted);font-size:.98rem}
+.pain-ico{width:30px;height:30px;color:var(--ink);margin-bottom:28px}
+.system-note{margin-top:24px;font-size:.98rem;color:var(--muted)}
+
+/* Jak zacząć – kroki na łuku, aktywny krok zmienia się przy przewijaniu */
+.start{padding-bottom:clamp(48px,6vw,80px)}
+.start .section-head{margin-bottom:clamp(24px,3vw,40px)}
+.js .start-track{height:260vh}
+.start-stage{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,96px);align-items:center}
+.js .start-stage{position:sticky;top:76px;height:calc(100svh - 76px)}
+.sp-panels{position:relative;display:grid}
+.sp-panel{grid-area:1/1;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-xl);padding:clamp(20px,2.4vw,28px);box-shadow:0 40px 80px -48px rgba(0,0,0,.22)}
+.js .sp-panel{opacity:0;transform:translateY(16px) scale(.985);transition:opacity .18s ease,transform .18s ease;pointer-events:none}
+.js .sp-panel.is-active{opacity:1;transform:none;pointer-events:auto;transition:opacity .45s var(--ease) .18s,transform .45s var(--ease) .18s}
+.sp-meta{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.82rem;font-weight:500;color:var(--faint);margin-bottom:16px}
+.sp-tag{display:inline-flex;align-items:center;gap:8px;padding:5px 12px;border-radius:999px;border:1px solid var(--line-2);color:var(--ink);white-space:nowrap}
+.sp-tag i{width:7px;height:7px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 4px rgba(252,93,3,.2)}
+.sp-art{width:100%;height:auto;margin-bottom:18px}
+.sp-mob{display:none}
+.sp-desc{display:flex;gap:12px;align-items:flex-start;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:1rem}
+.sp-desc svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--brand)}
+.sp-path{position:relative;height:440px}
+.sp-line{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.sp-prog{stroke-dasharray:1;stroke-dashoffset:var(--sp,1);transition:stroke-dashoffset .15s linear}
+.sp-nodes{list-style:none}
+.sp-node{position:absolute;display:flex;align-items:center;gap:20px;transform:translate(-28px,-28px);transition:opacity .4s var(--ease)}
+.js .sp-node{opacity:.4}
+.js .sp-node.is-done,.js .sp-node.is-active{opacity:1}
+.sp-dot{flex:none;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:.9rem;font-weight:600;background:var(--bg);border:1.5px solid var(--line-2);color:var(--muted);transition:background .4s,border-color .4s,color .4s,box-shadow .4s}
+.sp-node.is-done .sp-dot{background:var(--ink);border-color:var(--ink);color:var(--on-dark)}
+.sp-node.is-active .sp-dot{background:var(--brand);border-color:var(--brand);color:#fff;box-shadow:0 0 0 8px rgba(252,93,3,.16),0 0 32px rgba(252,93,3,.35)}
+.sp-node b{display:block;font-size:clamp(1.3rem,2.2vw,1.75rem);font-weight:600;letter-spacing:-.035em;line-height:1.15;white-space:nowrap}
+.sp-node small{display:block;margin-top:4px;font-size:.85rem;color:var(--faint)}
+
+/* Kto prowadzi */
+.about{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-xl);padding:clamp(16px,2.5vw,28px)}
+.about-photo{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-lg);background:var(--soft);color:var(--faint);font-size:.9rem}
+.about .lead{margin-top:18px}
+.about>div{padding:clamp(8px,2vw,24px) clamp(8px,2vw,24px) clamp(8px,2vw,24px) 0}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(40px,6vw,88px);align-items:start}
+.faq-list details{border-bottom:1px solid var(--line)}
+.faq-list details:first-child{border-top:1px solid var(--line)}
+.faq-list summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;font-weight:500;font-size:1.08rem;letter-spacing:-.01em}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"";flex:none;width:30px;height:30px;border-radius:50%;border:1px solid var(--line-2);background:linear-gradient(var(--ink),var(--ink)) center/10px 1.5px no-repeat,linear-gradient(var(--ink),var(--ink)) center/1.5px 10px no-repeat;transition:transform .25s var(--ease)}
+.faq-list details[open] summary::after{transform:rotate(45deg)}
+.faq-list details p{color:var(--muted);padding:0 48px 26px 0;max-width:65ch}
+
+/* Kontakt – ciemna karta */
+.contact{padding-top:clamp(40px,6vw,80px)}
+.contact-grid{width:calc(100% - 2 * var(--gutter));display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(40px,6vw,80px);align-items:start;background:var(--dark);color:var(--on-dark);border-radius:var(--r-xl);padding:clamp(28px,5vw,72px)}
+.contact .kicker{color:var(--on-dark-muted)}
+.contact .lead{margin-top:18px;color:var(--on-dark-muted)}
+.contact-list{list-style:none;margin-top:36px;display:flex;flex-wrap:wrap;gap:10px}
+.contact-list a{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:500;min-height:52px;padding:0 22px;border-radius:999px;background:rgba(255,255,255,.08);transition:background .2s}
+.contact-list li:first-child a{background:var(--paper);color:var(--ink)}
+.contact-list a:hover{background:rgba(255,255,255,.16)}
+.contact-list li:first-child a:hover{background:#e9e9e9}
+.contact-list svg{width:17px;height:17px}
+.expect{margin-top:32px;display:grid;gap:12px;list-style:none;font-size:.95rem;color:var(--on-dark-muted)}
+.expect li{display:flex;gap:10px}
+.expect svg{width:17px;height:17px;flex:none;margin-top:4px;color:var(--on-dark)}
+.form-card{background:rgba(255,255,255,.04);border:1px solid var(--dark-line);border-radius:var(--r-lg);padding:clamp(20px,3.5vw,36px)}
+.form{display:grid;gap:22px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:grid;gap:8px}
+.field>label,.group legend{font-size:.9rem;font-weight:500;color:var(--on-dark)}
+.opt{font-weight:400;color:var(--on-dark-muted)}
+.field input,.field textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid var(--dark-line);border-radius:var(--r-sm);padding:14px 16px;font-size:1rem;color:var(--on-dark);transition:border-color .2s,box-shadow .2s}
+.field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,.4)}
+.field input:focus,.field textarea:focus{outline:none;border-color:rgba(255,255,255,.7);box-shadow:0 0 0 4px rgba(255,255,255,.1)}
+.field textarea{min-height:104px;resize:vertical}
+.group{border:0;display:grid;gap:10px}
+.group legend{margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;cursor:pointer;margin:0}
+.chip span{display:inline-flex;align-items:center;gap:8px;padding:10px 15px;border-radius:999px;border:1px solid var(--dark-line);background:rgba(255,255,255,.04);font-size:.92rem;color:var(--on-dark-muted);transition:border-color .15s,background .15s,color .15s;cursor:pointer;user-select:none}
+.chip span::before{content:"";width:14px;height:14px;border-radius:4px;border:1.5px solid rgba(255,255,255,.4);flex:none;transition:background .15s,border-color .15s}
+.chip input[type=radio]+span::before{border-radius:50%}
+.chip input:checked+span{border-color:var(--paper);background:var(--paper);color:var(--ink)}
+.chip input:checked+span::before{background:var(--ink);border-color:var(--ink);box-shadow:inset 0 0 0 2px var(--paper)}
+.chip input:focus-visible+span{outline:2px solid var(--paper);outline-offset:2px}
+.group-error{display:none;font-size:.85rem;color:#ffb199}
+.group.invalid .group-error{display:block}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:.88rem;color:var(--on-dark-muted)}
+.consent input{width:18px;height:18px;margin-top:3px;accent-color:var(--paper);flex:none}
+.consent a{color:var(--on-dark)}
+.contact :focus-visible{outline-color:var(--paper)}
+.form .btn{width:100%}
+.contact .btn-primary{background:var(--paper);color:var(--ink)}
+.contact .btn-primary:hover{background:#e9e9e9}
+.form-status{border-radius:var(--r-md);padding:16px 18px;font-size:.95rem}
+.form-status[hidden]{display:none}
+.form-status.ok{background:rgba(74,222,128,.12);border:1px solid rgba(74,222,128,.4)}
+.form-status.err{background:rgba(255,177,153,.1);border:1px solid rgba(255,177,153,.4)}
+
+/* Stopka */
+.footer{padding:clamp(72px,9vw,112px) 0 32px;font-size:.94rem;color:var(--muted)}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:40px}
+.footer h4{color:var(--ink);font-size:.95rem;font-weight:600;margin-bottom:16px}
+.footer ul{list-style:none;display:grid;gap:10px}
+.footer a{text-decoration:none}
+.footer a:hover{color:var(--ink)}
+.footer-about p{margin-top:16px;max-width:36ch}
+.footer address{font-style:normal;display:grid;gap:6px}
+.footer-bottom{margin-top:clamp(32px,4vw,48px);padding-top:24px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:.86rem;color:var(--faint)}
+
+/* Animacje */
+.site-header.scrolled{border-bottom-color:var(--line);box-shadow:0 10px 30px -24px rgba(0,0,0,.35)}
+/* Hero: jedna sekwencja po załadowaniu */
+.js .hero-inner>*{opacity:0;animation:rise .9s var(--ease) forwards}
+.js .hero-inner>:nth-child(2){animation-delay:.12s}
+.js .hero-inner>:nth-child(3){animation-delay:.24s}
+.js .hero-inner>:nth-child(4){animation-delay:.36s}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+/* Sekcje: wejście przy przewijaniu, elementy w grupie po kolei */
+.js .reveal{opacity:0;transform:translateY(32px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:calc(var(--d,0) * 110ms)}
+.js .reveal.in{opacity:1;transform:none}
+/* Karty: delikatne uniesienie po najechaniu */
+.pain{transition:transform .35s var(--ease)}
+.pain:hover{transform:translateY(-4px)}
+.about-photo{transition:transform .6s var(--ease)}
+.about:hover .about-photo{transform:scale(1.015)}
+.btn-ghost:hover{transform:translateY(-1px)}
+
+/* Responsywność */
+@media (max-width:1040px){
+  .nav-links a{padding:8px 10px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  .nav-links,.nav-cta .btn{display:none}
+  .burger{display:grid}
+  .nav.open .nav-links{display:flex;flex-direction:column;position:absolute;top:76px;left:0;right:0;padding:12px var(--gutter) 24px;background:var(--bg);border-bottom:1px solid var(--line)}
+  .nav.open .nav-links a{padding:14px 4px;font-size:1.05rem;color:var(--ink);border-bottom:1px solid var(--line);border-radius:0}
+  .nav.open .nav-links .menu-cta{display:block;margin-top:18px}
+  .nav.open .nav-links .menu-cta a{display:flex;padding:0 22px;border:0;border-radius:999px;color:var(--on-dark);justify-content:center}
+  .faq-grid,.contact-grid,.hv-body,.about,.start-stage,.hero-inner{grid-template-columns:1fr}
+  .hero-inner{grid-template-rows:auto}
+  .hero-phone{margin-top:48px}
+  .phone{width:min(270px,100%)}
+  .js .start-track{height:auto}
+  .js .start-stage{position:static;height:auto}
+  .sp-path{display:none}
+  .sp-panels{gap:16px}
+  .sp-panel{grid-area:auto}
+  .js .sp-panel{opacity:1;transform:none;pointer-events:auto}
+  .sp-mob{display:block;font-size:1.35rem;letter-spacing:-.025em;margin-bottom:10px}
+  .sp-desc{padding-top:0;border-top:0}
+  .about-photo{max-width:280px}
+  .about>div{padding:0 8px 8px}
+  .pains{grid-template-columns:1fr}
+  .pain,.pain+.pain{padding:28px 0;border-left:0}
+  .pain+.pain{border-top:1px solid var(--line)}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .row{grid-template-columns:1fr}
+  /* Arkusz w kroku 4: nazwa zapytania w pierwszej linii, status i wartość pod nią */
+  .hv-row{grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;padding:10px 14px}
+  .hv-row>:first-child{grid-column:1/-1;font-weight:500}
+  .hv-row-head{display:none}
+  .hv-row-sum>:first-child{grid-column:auto}
+  .hv-row+.hv-row:not(.hv-row-sum){border-top:0}
+  .hv-row:nth-child(n+3):not(.hv-row-sum){border-top:1px solid var(--soft)}
+  .hero-ctas .btn{width:100%}
+  .hv-flow{display:block;padding-top:0}
+  .hf-row{display:grid;grid-template-columns:52px 12px minmax(0,1fr);gap:0 14px;align-items:start;text-align:left;padding:10px 0}
+  .hf-time{padding:0;line-height:1.35}
+  .hf-dot{margin-top:4px}
+  .hf-row b{margin-top:0;max-width:none}
+  .hf-row small{grid-column:3}
+  .hf-row:not(:last-child)::after{top:26px;bottom:-14px;left:71.5px;width:1px;height:auto}
+  .hf-dash::after{border-top:0;border-left:1px dashed var(--line-2)}
+  .hf-legend{justify-content:flex-start;margin-top:16px}
+  .hero{min-height:0}
+  .hero-ctas{width:100%}
+  .hero-facts{grid-template-columns:1fr;margin-top:40px}
+  .hero-facts li,.hero-facts li+li{padding:14px 0;border-left:0}
+  .hero-facts li+li{border-top:1px solid var(--line)}
+  .hv-step{grid-template-columns:26px minmax(0,1fr);gap:10px}
+  .hv-num{width:26px;height:26px}
+  .hv-steps::before{left:12.5px}
+  .hv-steps::after{left:12px}
+  .contact-grid{padding:32px 20px;border-radius:var(--r-lg)}
+  .contact-list a{width:100%;justify-content:center}
+  .contact-list li{flex:1 1 100%}
+  .footer-grid{grid-template-columns:1fr}
+  .faq-list details p{padding-right:0}
+}
+@media (max-width:420px){
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .hero-inner>*,.js .reveal,.js .hv-step,.js .pn{opacity:1;transform:none}
+  .js .start-track{height:auto}
+  .js .start-stage{position:static;height:auto}
+  .js .sp-node{opacity:1}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#tresc">Przejdź do treści</a>
+
+<!-- Ikony SVG (sprite) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 005 5L14 13l5 2v3a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></symbol>
+  <symbol id="i-form" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5.6 18.4a9 9 0 1112.8 0"/><path d="M12 12l4-3"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/></symbol>
+  <symbol id="i-qualify" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h15l-6 7.5V18l-3 2v-8.5z"/><path d="M14.5 17l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-loop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 00-14.5-4.5L4 8"/><path d="M4 4v4h4"/><path d="M4 13a8 8 0 0014.5 4.5L20 16"/><path d="M20 20v-4h-4"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3L10 14"/><path d="M21 3l-7 18-4-7-7-4z"/></symbol>
+  <symbol id="i-report" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V4M4 20h16"/><path d="M8 16v-4M12 16V8M16 16v-6"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+  <symbol id="i-wave" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 26l7-10 7 12 6-16 6 10 6-6"/></symbol>
+  <symbol id="i-coins" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><ellipse cx="17" cy="12" rx="10" ry="4"/><path d="M7 12v8c0 2.2 4.5 4 10 4s10-1.8 10-4v-8"/><path d="M27 20c3.5.5 6 2 6 3.6v6c0 2.2-4.5 4-10 4-3.6 0-6.8-.8-8.5-2"/><path d="M33 23.6"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h28L23 21v10l-6 3V21z"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0112 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 004 0"/></symbol>
+  <symbol id="i-dashed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="3 3"><circle cx="12" cy="12" r="8"/></symbol>
+  <!-- Logo MULTO (znak w kolorze pomarańczowym + napis), odwzorowane wektorowo z pliku logo -->
+  <symbol id="logo-multo" viewBox="292 240 1416 185">
+    <path fill="#fc5d03" d="M292 416V338L407 244L490 312L575 244L688 338V416H631V358L575 313L518 360V416H461V360L407 313L349 360V416Z"/>
+    <g fill="#161a1e">
+      <path d="M745 416V244H790L853 314L916 244H962V416H908V326L859 383H847L799 326V416Z"/>
+      <path d="M988 244H1043V338A34 33 0 0 0 1111 338V244H1165V340A88.5 80 0 0 1 988 340Z"/>
+      <path d="M1196 244H1250V366H1339V416H1196Z"/>
+      <path d="M1326 244H1496V290H1439V416H1383V290H1326Z"/>
+      <path fill-rule="evenodd" d="M1498 332.5a104.5 92.5 0 1 0 209 0a104.5 92.5 0 1 0 -209 0ZM1554 330.5a48 45.5 0 1 0 96 0a48 45.5 0 1 0 -96 0Z"/>
+    </g>
+  </symbol>
+</svg>
+
+<header class="site-header">
+  <nav class="wrap nav" id="nav" aria-label="Główna nawigacja">
+    <a href="#" class="logo" aria-label="MULTO – strona główna">
+      <svg class="logo-svg" aria-hidden="true"><use href="#logo-multo"/></svg>
+    </a>
+    <ul class="nav-links" id="menu">
+      <li><a href="#system">System</a></li>
+      <li><a href="#jak-zaczac">Jak zacząć</a></li>
+      <li><a href="#o-nas">O nas</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li class="menu-cta"><a href="#kontakt" class="btn btn-primary">Bezpłatna konsultacja</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#kontakt" class="btn btn-primary btn-sm">Bezpłatna konsultacja</a>
+      <button class="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main id="tresc">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1>Zapytania z Google, które kończą się zleceniem.</h1>
+        <p class="lead">Reklama w Google, landing page, który zbiera konkretne zapytania, i automatyczna obsługa, dzięki której żadne nie przepada. Co miesiąc widzisz, ile zleceń i ile przychodu zyskała Twoja firma dzięki naszemu systemowi.</p>
+        <div class="hero-ctas">
+          <a href="#kontakt" class="btn btn-primary">Umów bezpłatną konsultację</a>
+          <a href="#system" class="btn btn-ghost">Zobacz, jak to działa</a>
+        </div>
+      </div>
+      <!-- Telefon z powiadomieniami: ilustracja, dane przykładowe -->
+      <figure class="hero-phone">
+        <div class="phone" aria-hidden="true">
+          <div class="phone-screen">
+            <div class="pn">
+              <span class="pn-ico"><svg><use href="#i-bell"/></svg></span>
+              <div><div class="pn-top"><b>Nowe zapytanie</b><small>teraz</small></div><p>Remont łazienki, 6 m² · start za 1–2 mies.</p></div>
+            </div>
+            <div class="pn">
+              <span class="pn-ico"><svg><use href="#i-send"/></svg></span>
+              <div><div class="pn-top"><b>Status: wysłano wycenę</b></div><p>Remont łazienki, 6 m²</p></div>
+            </div>
+            <div class="pn pn-win">
+              <span class="pn-ico"><svg><use href="#i-check"/></svg></span>
+              <div><div class="pn-top"><b>Wygrane zlecenie</b></div><p class="pn-val">28 000 zł</p></div>
+            </div>
+          </div>
+        </div>
+        <figcaption>Ilustracja. Dane przykładowe.</figcaption>
+      </figure>
+      <ul class="hero-facts">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Konto reklamowe należy do Ciebie</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Umowa miesięczna</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Jedna firma na obszar</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section" aria-labelledby="problem-h">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Znasz to?</p>
+      <h2 id="problem-h">Dobra robota to za mało, żeby mieć stały napływ zleceń.</h2>
+    </div>
+    <div class="pains">
+      <div class="pain">
+        <svg class="pain-ico" aria-hidden="true"><use href="#i-wave"/></svg>
+        <h3>Zlecenia przychodzą falami</h3>
+        <p>Raz kalendarz jest pełny, a raz pusty. Polecenia są świetne, ale nie da się na nich zaplanować kolejnego kwartału.</p>
+      </div>
+      <div class="pain">
+        <svg class="pain-ico" aria-hidden="true"><use href="#i-coins"/></svg>
+        <h3>Reklama bez odpowiedzi</h3>
+        <p>Płacisz za reklamy albo portale z ogłoszeniami i nie wiesz, czy to się zwraca ani ile kosztuje jeden klient.</p>
+      </div>
+      <div class="pain">
+        <svg class="pain-ico" aria-hidden="true"><use href="#i-clock"/></svg>
+        <h3>Zapytania przepadają</h3>
+        <p>Jesteś na budowie, oddzwaniasz po dwóch dniach, a klient już wybrał innego wykonawcę.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SYSTEM -->
+<section class="section" id="system" aria-labelledby="system-h">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">System</p>
+      <h2 id="system-h">Jeden system: od wyszukiwania w Google do podpisanego zlecenia.</h2>
+    </div>
+
+    <!-- Wizualizacja procesu. Nazwa strony, dane i kwota są przykładowe, bez wyników kampanii. -->
+    <figure class="hv" aria-label="Jak zapytanie z Google zamienia się w zlecenie">
+      <ol class="hv-steps">
+        <li class="hv-step">
+          <span class="hv-num" aria-hidden="true">1</span>
+          <div class="hv-body">
+            <div class="hv-text">
+              <h3>Dotarcie</h3>
+              <p>Google Ads dociera do osób aktywnie szukających usług remontowych i kieruje je na odpowiedni landing page.</p>
+            </div>
+            <div class="hv-card hv-search" aria-hidden="true">
+              <div class="hv-bar"><svg><use href="#i-search"/></svg><span class="query-text" id="query">remont łazienki warszawa</span></div>
+              <div class="hv-ad"><small><i>Sponsorowane</i>twojafirma.pl/remont-lazienki</small><b>Remont łazienki w Warszawie</b></div>
+            </div>
+          </div>
+        </li>
+        <li class="hv-step">
+          <span class="hv-num" aria-hidden="true">2</span>
+          <div class="hv-body">
+            <div class="hv-text">
+              <h3>Pozyskanie zapytania</h3>
+              <p>Landing page przedstawia ofertę firmy i zbiera informacje o potencjalnym zleceniu, np. zakres prac, metraż i planowany termin.</p>
+            </div>
+            <div class="hv-card hv-lp" aria-hidden="true">
+              <div class="hv-chrome"><span class="dots"><i></i><i></i><i></i></span><span class="hv-url">twojafirma.pl/remont-lazienki</span></div>
+              <div class="hv-form">
+                <span class="hv-field"><small>Zakres prac</small><i>Remont łazienki</i></span>
+                <span class="hv-field"><small>Metraż</small><i>6 m²</i></span>
+                <span class="hv-field"><small>Planowany termin</small><i>Za 1–2 miesiące</i></span>
+                <span class="hv-btn">Wyślij zapytanie</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="hv-step">
+          <span class="hv-num" aria-hidden="true">3</span>
+          <div class="hv-body hv-body-wide">
+            <div class="hv-text">
+              <h3>Obsługa zapytania</h3>
+              <p>Klient w minutę dostaje SMS z potwierdzeniem, a Ty powiadomienie o nowym zapytaniu. Jeśli nie oddzwonisz w ciągu 60 minut, dostajesz przypomnienie.</p>
+            </div>
+            <!-- Droga zapytania: czarne kropki dzieją się automatycznie, pomarańczowa to kontakt firmy -->
+            <div class="hv-flow" aria-hidden="true">
+              <div class="hf-row"><span class="hf-time">0:00</span><span class="hf-dot"></span><b>Klient wysyła formularz</b></div>
+              <div class="hf-row"><span class="hf-time">+1 min</span><span class="hf-dot"></span><b>SMS z potwierdzeniem do klienta</b></div>
+              <div class="hf-row hf-dash"><span class="hf-time">+1 min</span><span class="hf-dot"></span><b>Powiadomienie do Ciebie</b></div>
+              <div class="hf-row hf-if"><span class="hf-time">+60 min</span><span class="hf-dot"></span><b>Przypomnienie</b><small>jeśli nikt nie oddzwonił</small></div>
+              <div class="hf-row hf-you"><span class="hf-time">Ty</span><span class="hf-dot"></span><b>Oddzwaniasz do klienta</b></div>
+            </div>
+            <p class="hf-legend" aria-hidden="true"><span><i></i>Automatycznie</span><span class="hf-legend-you"><i></i>Twoja firma</span></p>
+          </div>
+        </li>
+        <li class="hv-step">
+          <span class="hv-num" aria-hidden="true">4</span>
+          <div class="hv-body">
+            <div class="hv-text">
+              <h3>Pomiar i optymalizacja</h3>
+              <p>Każde zapytanie jest rejestrowane i otrzymuje status: nowe, skontaktowano się, wysłano wycenę, wygrane lub przegrane.</p>
+              <p class="hv-feedback"><svg aria-hidden="true"><use href="#i-loop"/></svg><span>Regularnie zbieramy od Ciebie informacje o statusie zapytań. Dzięki temu oceniamy nie tylko liczbę leadów, ale też ich jakość i skuteczność kampanii, i na tej podstawie optymalizujemy Google Ads.</span></p>
+            </div>
+            <div>
+              <div class="hv-card hv-sheet" aria-hidden="true">
+                <div class="hv-row hv-row-head"><span>Zapytanie</span><span>Status</span><span>Wartość</span></div>
+                <div class="hv-row"><span>Remont mieszkania, 70 m²</span><span class="hv-st st-new">Nowe</span><span class="hv-val">—</span></div>
+                <div class="hv-row"><span>Remont kuchni, 12 m²</span><span class="hv-st st-contact">Skontaktowano się</span><span class="hv-val">—</span></div>
+                <div class="hv-row"><span>Wykończenie domu, 140 m²</span><span class="hv-st st-quote">Wysłano wycenę</span><span class="hv-val">95 000 zł</span></div>
+                <div class="hv-row"><span>Remont łazienki, 6 m²</span><span class="hv-st st-win">Wygrane</span><b class="hv-val">28 000 zł</b></div>
+                <div class="hv-row"><span>Wykończenie mieszkania, 55 m²</span><span class="hv-st st-lost">Przegrane</span><span class="hv-val">—</span></div>
+                <div class="hv-row hv-row-sum"><span>Wartość wygranych zleceń</span><b class="hv-val">28 000 zł</b></div>
+              </div>
+              <p class="hv-note">Dane przykładowe.</p>
+            </div>
+          </div>
+        </li>
+      </ol>
+      <p class="hv-foot">Ilustracja procesu. Nazwa strony, zapytania i kwoty są przykładowe.</p>
+    </figure>
+    <p class="system-note">Budżet reklamowy opłacasz bezpośrednio w Google. Konto zawsze należy do Ciebie.</p>
+  </div>
+</section>
+
+<!-- JAK ZACZĄĆ -->
+<section class="section start" id="jak-zaczac" aria-labelledby="start-h">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Jak zacząć</p>
+      <h2 id="start-h">Trzy kroki do działającej kampanii.</h2>
+    </div>
+  </div>
+  <!-- Na desktopie sekcja przypina się do ekranu, a przewijanie przełącza aktywny krok -->
+  <div class="start-track" id="start-track">
+    <div class="start-stage wrap">
+      <div class="sp-panels">
+        <article class="sp-panel is-active" data-step="0">
+          <div class="sp-meta"><span>Krok 01 / 03</span><span class="sp-tag"><i></i>15–20 min</span></div>
+          <svg class="sp-art" viewBox="0 0 320 150" aria-hidden="true">
+            <rect style="fill:var(--bg);stroke:var(--line-2)" x="20" y="12" width="280" height="126" rx="14"/>
+            <rect style="fill:var(--paper);stroke:var(--line-2)" x="36" y="28" width="118" height="78" rx="10"/>
+            <rect style="fill:var(--paper);stroke:var(--line-2)" x="166" y="28" width="118" height="78" rx="10"/>
+            <circle style="stroke:var(--ink)" cx="95" cy="58" r="11" fill="none" stroke-width="2"/>
+            <path style="stroke:var(--ink)" d="M75 92c3-11 11-16 20-16s17 5 20 16" fill="none" stroke-width="2" stroke-linecap="round"/>
+            <circle style="stroke:var(--ink)" cx="225" cy="58" r="11" fill="none" stroke-width="2"/>
+            <path style="stroke:var(--ink)" d="M205 92c3-11 11-16 20-16s17 5 20 16" fill="none" stroke-width="2" stroke-linecap="round"/>
+            <circle style="fill:var(--brand)" cx="270" cy="40" r="4"/>
+            <rect style="fill:var(--ink)" x="122" y="116" width="76" height="12" rx="6"/>
+            <circle style="fill:var(--brand)" cx="160" cy="122" r="3"/>
+          </svg>
+          <h3 class="sp-mob">Rozmowa kwalifikacyjna</h3>
+          <p class="sp-desc"><svg aria-hidden="true"><use href="#i-check"/></svg><span>15–20 minut na Google Meet z mini-audytem: ile osób w Twojej okolicy szuka Twojej usługi.</span></p>
+        </article>
+        <article class="sp-panel" data-step="1">
+          <div class="sp-meta"><span>Krok 02 / 03</span><span class="sp-tag"><i></i>5 dni roboczych</span></div>
+          <svg class="sp-art" viewBox="0 0 320 150" aria-hidden="true">
+            <rect style="fill:var(--bg);stroke:var(--line-2)" x="20" y="12" width="280" height="126" rx="14"/>
+            <g style="fill:var(--ink)" font-family="Geist, system-ui, sans-serif" font-size="13">
+              <rect style="fill:var(--brand)" x="40" y="26" width="18" height="18" rx="5"/><path d="M44 35l3.5 3.5L54 31" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="39.5">Kampania Google Ads</text>
+              <rect style="fill:var(--brand)" x="40" y="54" width="18" height="18" rx="5"/><path d="M44 63l3.5 3.5L54 59" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="67.5">Strona pod kampanię</text>
+              <rect style="fill:var(--brand)" x="40" y="82" width="18" height="18" rx="5"/><path d="M44 91l3.5 3.5L54 87" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="95.5">Pomiar zapytań</text>
+              <rect style="fill:var(--paper);stroke:var(--line-2)" x="40" y="110" width="18" height="18" rx="5"/><text style="fill:var(--muted)" x="70" y="123.5">Powiadomienia</text>
+            </g>
+            <rect style="fill:var(--paper);stroke:var(--line-2)" x="222" y="58" width="58" height="34" rx="17"/>
+            <text style="fill:var(--ink)" x="251" y="80" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="13" font-weight="600">3 / 4</text>
+          </svg>
+          <h3 class="sp-mob">Wdrożenie</h3>
+          <p class="sp-desc"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Kampania, strona, pomiar i powiadomienia są gotowe w 5 dni roboczych od otrzymania dostępów.</span></p>
+        </article>
+        <article class="sp-panel" data-step="2">
+          <div class="sp-meta"><span>Krok 03 / 03</span><span class="sp-tag"><i></i>Co tydzień</span></div>
+          <svg class="sp-art" viewBox="0 0 320 150" aria-hidden="true">
+            <rect style="fill:var(--bg);stroke:var(--line-2)" x="20" y="12" width="280" height="126" rx="14"/>
+            <g style="fill:var(--faint)" font-family="Geist, system-ui, sans-serif" font-size="11" text-anchor="middle">
+              <text x="62" y="36">Tydz. 1</text><text x="122" y="36">Tydz. 2</text><text x="182" y="36">Tydz. 3</text><text x="242" y="36">Tydz. 4</text>
+            </g>
+            <path style="stroke:var(--line-2)" d="M40 46h240"/>
+            <circle style="fill:var(--brand)" cx="62" cy="58" r="5"/><circle style="fill:var(--brand)" cx="122" cy="58" r="5"/><circle style="fill:var(--brand)" cx="182" cy="58" r="5"/><circle style="fill:var(--brand)" cx="242" cy="58" r="5"/>
+            <path style="stroke:var(--line-2)" d="M40 122h240"/>
+            <rect style="fill:var(--line-2)" x="52" y="100" width="20" height="22" rx="4"/>
+            <rect style="fill:var(--line-2)" x="112" y="90" width="20" height="32" rx="4"/>
+            <rect style="fill:var(--line-2)" x="172" y="84" width="20" height="38" rx="4"/>
+            <rect style="fill:var(--ink)" x="232" y="76" width="20" height="46" rx="4"/>
+          </svg>
+          <h3 class="sp-mob">Współpraca</h3>
+          <p class="sp-desc"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Krótki kontakt raz w tygodniu, w którym aktualizujemy statusy zapytań, i raport miesięczny w zleceniach.</span></p>
+        </article>
+      </div>
+
+      <div class="sp-path" aria-hidden="true">
+        <svg class="sp-line" viewBox="0 0 560 440" preserveAspectRatio="none">
+          <path style="stroke:var(--line-2)" d="M40 40 Q 260 220 40 400" fill="none" stroke-width="1.5" stroke-dasharray="6 7" vector-effect="non-scaling-stroke"/>
+          <path style="stroke:var(--brand)" class="sp-prog" d="M40 40 Q 260 220 40 400" fill="none" stroke-width="2" pathLength="1" vector-effect="non-scaling-stroke"/>
+        </svg>
+        <ol class="sp-nodes">
+          <li class="sp-node is-active" style="left:7.14%;top:40px"><span class="sp-dot">01</span><div><b>Rozmowa kwalifikacyjna</b><small>15–20 min</small></div></li>
+          <li class="sp-node" style="left:26.8%;top:220px"><span class="sp-dot">02</span><div><b>Wdrożenie</b><small>5 dni roboczych</small></div></li>
+          <li class="sp-node" style="left:7.14%;top:400px"><span class="sp-dot">03</span><div><b>Współpraca</b><small>Co tydzień</small></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KTO PROWADZI -->
+<section class="section" id="o-nas" aria-labelledby="about-h">
+  <div class="wrap">
+    <div class="about">
+      <img class="about-photo" src="piotr-milczarski.jpg" alt="Piotr Milczarski" width="480" height="600" loading="lazy">
+      <div>
+        <p class="kicker">Kto prowadzi</p>
+        <h2 id="about-h">Rozmawiasz z osobą, która prowadzi Twoją kampanię.</h2>
+        <p class="lead">Twoją kampanię prowadzi Piotr Milczarski. Sam ją ustawia i optymalizuje, więc rozmawiasz bezpośrednio z osobą odpowiedzialną za wynik, bez opiekunów i przekazywania sprawy dalej. Pracujemy z jedną firmą z branży na dzielnicę lub powiat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" aria-labelledby="faq-h">
+  <div class="wrap faq-grid">
+    <div class="section-head" style="margin-bottom:0">
+      <p class="kicker">FAQ</p>
+      <h2 id="faq-h">Najczęstsze pytania</h2>
+      <p class="lead">Nie znalazłeś odpowiedzi? Zapytaj na bezpłatnej konsultacji.</p>
+    </div>
+    <div class="faq-list">
+      <details><summary>Ile kosztuje współpraca?</summary><p>Cena zależy od zakresu i obszaru działania. Ustalamy ją po bezpłatnej konsultacji: dostajesz stałą miesięczną kwotę za obsługę. Budżet reklamowy opłacasz osobno, bezpośrednio w Google.</p></details>
+      <details><summary>Jaki budżet reklamowy jest potrzebny?</summary><p>Zależy od okolicy i konkurencji. Na konsultacji pokażemy realne widełki dla Twojego obszaru, zanim cokolwiek wydasz.</p></details>
+      <details><summary>Czy gwarantujecie konkretną liczbę zleceń?</summary><p>Nie. Uważaj na każdego, kto to obiecuje bez znajomości Twojej firmy. Gwarantujemy rzetelną pracę, pełny pomiar i jasne raporty, z których widzisz, co realnie daje reklama.</p></details>
+      <details><summary>Kiedy pojawią się pierwsze zapytania?</summary><p>Kampania startuje w ciągu 5 dni roboczych od otrzymania dostępów. Pierwszy raport dostajesz po 7 dniach, potem podsumowanie na koniec każdego miesiąca.</p></details>
+      <details><summary>Na jak długo jest umowa?</summary><p>Umowa jest miesięczna. Po okresie testowym obowiązuje 30 dni wypowiedzenia. Konto reklamowe zawsze należy do Ciebie, także po zakończeniu współpracy.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="section contact" id="kontakt" aria-labelledby="contact-h">
+  <div class="wrap contact-grid">
+    <div class="contact-aside">
+      <p class="kicker">Kontakt</p>
+      <h2 id="contact-h">Umów bezpłatną konsultację.</h2>
+      <p class="lead">Rozmawiamy 15–20 minut na Google Meet. Pokazujemy Ci darmowy mini-audyt: ile osób w Twojej okolicy szuka Twojej usługi w Google i kto już się tam reklamuje. Bez zobowiązań.</p>
+      <ul class="expect">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Oddzwonimy w ciągu 24 godzin w dni robocze.</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Rozmowa dotyczy Twojej firmy i Twojego obszaru, nie gotowego pakietu.</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Jeśli Google Ads nie ma u Ciebie sensu, powiemy to wprost.</li>
+      </ul>
+      <ul class="contact-list">
+        <li><a href="tel:[TELEFON]"><svg aria-hidden="true"><use href="#i-phone"/></svg>[TELEFON]</a></li>
+        <li><a href="mailto:[EMAIL]"><svg aria-hidden="true"><use href="#i-mail"/></svg>[EMAIL]</a></li>
+      </ul>
+    </div>
+
+    <div class="form-card">
+      <!-- Formularz działa automatycznie na Netlify (data-netlify). Na innym hostingu podmień action na np. Formspree i usuń data-netlify. -->
+      <form class="form" id="lead-form" name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?wyslano=1" novalidate>
+        <input type="hidden" name="form-name" value="kontakt">
+        <p hidden><label>Nie wypełniaj: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+        <div class="row">
+          <div class="field"><label for="f-imie">Imię</label><input id="f-imie" name="imie" required autocomplete="given-name"></div>
+          <div class="field"><label for="f-tel">Telefon</label><input id="f-tel" name="telefon" type="tel" required autocomplete="tel" inputmode="tel" placeholder="np. 600 000 000"></div>
+        </div>
+        <div class="field"><label for="f-firma">Nazwa firmy i miasto</label><input id="f-firma" name="firma" required autocomplete="organization" placeholder="np. Twoja firma, Poznań"></div>
+
+        <fieldset class="group" data-required="dodatkowe_zlecenia">
+          <legend>Czy możesz przyjąć dodatkowe zlecenia?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="dodatkowe_zlecenia" value="Tak, od zaraz"><span>Tak, od zaraz</span></label>
+            <label class="chip"><input type="radio" name="dodatkowe_zlecenia" value="Tak, za 1–2 miesiące"><span>Tak, za 1–2 miesiące</span></label>
+            <label class="chip"><input type="radio" name="dodatkowe_zlecenia" value="Jeszcze nie wiem"><span>Jeszcze nie wiem</span></label>
+          </div>
+          <p class="group-error" role="alert">Zaznacz jedną odpowiedź.</p>
+        </fieldset>
+
+        <label class="consent"><input type="checkbox" name="zgoda" value="tak" required><span>Wyrażam zgodę na kontakt w sprawie konsultacji. Szczegóły w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</span></label>
+
+        <button class="btn btn-primary" type="submit">Wyślij zgłoszenie</button>
+        <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="#" class="logo" aria-label="MULTO – strona główna">
+          <svg class="logo-svg" aria-hidden="true"><use href="#logo-multo"/></svg>
+        </a>
+        <p>MULTO — system pozyskiwania zleceń dla firm remontowych w całej Polsce.</p>
+      </div>
+      <div>
+        <h4>Na stronie</h4>
+        <ul>
+          <li><a href="#system">System</a></li>
+          <li><a href="#jak-zaczac">Jak zacząć</a></li>
+          <li><a href="#o-nas">O nas</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:[TELEFON]">[TELEFON]</a></li>
+          <li><a href="mailto:[EMAIL]">[EMAIL]</a></li>
+          <li><a href="#kontakt">Formularz kontaktowy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Dane przedsiębiorcy</h4>
+        <address>
+          <span>[Imię i nazwisko / pełna nazwa firmy]</span>
+          <span>[Ulica i numer, kod pocztowy, miasto]</span>
+          <span>NIP: [NIP]</span>
+          <span>REGON: [REGON]</span>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="y">2026</span> MULTO</span>
+      <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var d=document, root=d.documentElement;
+  root.classList.add('js');
+  d.getElementById('y').textContent=new Date().getFullYear();
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Menu mobilne
+  var nav=d.getElementById('nav'), burger=nav.querySelector('.burger');
+  function setMenu(open){nav.classList.toggle('open',open);burger.setAttribute('aria-expanded',open);burger.setAttribute('aria-label',open?'Zamknij menu':'Otwórz menu')}
+  burger.addEventListener('click',function(){setMenu(!nav.classList.contains('open'))});
+  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setMenu(false)})});
+  d.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});
+
+  // Nagłówek: cień po przewinięciu
+  var header=d.querySelector('.site-header');
+  function onScroll(){header.classList.toggle('scrolled',window.scrollY>8)}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // Sekcje: wejście przy przewijaniu (elementy w grupie po kolei)
+  var groups=['.section-head','.pains','.system-note','.hv-foot','.about','.faq-list','.contact-aside','.form-card'];
+  var items=[];
+  groups.forEach(function(sel){d.querySelectorAll(sel).forEach(function(el){
+    var kids=el.matches('.pains,.faq-list')?el.children:[el];
+    [].forEach.call(kids,function(k,n){k.classList.add('reveal');k.style.setProperty('--d',n);items.push(k)});
+  })});
+  if(!reduce&&'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -8% 0px'});
+    items.forEach(function(el){io.observe(el)});
+  } else items.forEach(function(el){el.classList.add('in')});
+
+  // System: kroki podświetlają się po kolei w miarę przewijania, linia osi wypełnia się do bieżącego punktu
+  var list=d.querySelector('.hv-steps'), steps=[].slice.call(list.children), ticking=false;
+  function updSteps(){
+    ticking=false;
+    var top=list.getBoundingClientRect().top, mark=innerHeight*.6-top, cur=-1;
+    var c=steps.map(function(s){var r=s.querySelector('.hv-num').getBoundingClientRect();return r.top+r.height/2-top});
+    var first=c[0], last=c[c.length-1];
+    list.style.setProperty('--t0',first+'px');
+    list.style.setProperty('--track',(last-first)+'px');
+    list.style.setProperty('--prog',(reduce?last-first:Math.max(0,Math.min(last,mark)-first))+'px');
+    steps.forEach(function(s,k){var on=reduce||c[k]<=mark;s.classList.toggle('on',on);if(on)cur=k});
+    steps.forEach(function(s,k){s.classList.toggle('current',k===cur)});
+  }
+  function reqSteps(){if(!ticking){ticking=true;requestAnimationFrame(updSteps)}}
+  window.addEventListener('scroll',reqSteps,{passive:true});
+  window.addEventListener('resize',reqSteps);
+  updSteps();
+
+  // Jak zacząć: postęp przewijania przez przypiętą sekcję wybiera aktywny krok
+  var track=d.getElementById('start-track'), panels=[].slice.call(track.querySelectorAll('.sp-panel')), nodes=[].slice.call(track.querySelectorAll('.sp-node')), prog=track.querySelector('.sp-prog'), spTick=false;
+  function updStart(){
+    spTick=false;
+    var r=track.getBoundingClientRect(), span=r.height-(innerHeight-76);
+    var p=span>0?Math.min(1,Math.max(0,(76-r.top)/span)):0;
+    var k=Math.min(nodes.length-1,Math.floor(p*nodes.length));
+    panels.forEach(function(el,n){el.classList.toggle('is-active',n===k)});
+    nodes.forEach(function(el,n){el.classList.toggle('is-active',n===k);el.classList.toggle('is-done',n<k)});
+    prog.style.setProperty('--sp',String(1-Math.min(1,p*1.15)));
+  }
+  function reqStart(){if(!spTick){spTick=true;requestAnimationFrame(updStart)}}
+  window.addEventListener('scroll',reqStart,{passive:true});
+  window.addEventListener('resize',reqStart);
+  updStart();
+
+  // System: fraza w wyszukiwarce wpisuje się, gdy grafika pojawi się na ekranie
+  if(!reduce){
+    var q=d.getElementById('query'), phrase=q.textContent, i=0;
+    q.textContent='';
+    function type(){if(i<=phrase.length){q.textContent=phrase.slice(0,i++);setTimeout(type,70)}}
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es,o){if(es[0].isIntersecting){o.disconnect();setTimeout(type,500)}},{threshold:.4}).observe(q.closest('.hv-card'));
+    } else type();
+  }
+
+  // Formularz: walidacja + wysyłka AJAX (Netlify). W razie błędu – zwykła wysyłka formularza.
+  var form=d.getElementById('lead-form'), status=d.getElementById('form-status');
+  function show(type,msg){status.className='form-status '+type;status.textContent=msg;status.hidden=false}
+  if(/[?&]wyslano=1/.test(location.search)){show('ok','Dziękujemy, zgłoszenie zostało wysłane. Oddzwonimy w ciągu 24 godzin w dni robocze.');location.hash='kontakt'}
+
+  function validate(){
+    var ok=true, first=null;
+    form.querySelectorAll('[data-required]').forEach(function(g){
+      var has=g.querySelector('input:checked');
+      g.classList.toggle('invalid',!has);
+      if(!has){ok=false;first=first||g.querySelector('input')}
+    });
+    form.querySelectorAll('input[required],textarea[required]').forEach(function(el){
+      if(!el.checkValidity()){ok=false;first=first||el}
+    });
+    if(first){first.focus();if(first.reportValidity)first.reportValidity()}
+    return ok;
+  }
+  form.addEventListener('change',function(e){var g=e.target.closest('[data-required]');if(g&&g.querySelector('input:checked'))g.classList.remove('invalid')});
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!validate())return;
+    var btn=form.querySelector('button[type=submit]');
+    btn.disabled=true;btn.textContent='Wysyłanie…';
+    fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()})
+      .then(function(r){
+        if(!r.ok)throw new Error(r.status);
+        form.reset();
+        show('ok','Dziękujemy, zgłoszenie zostało wysłane. Oddzwonimy w ciągu 24 godzin w dni robocze.');
+        btn.textContent='Zgłoszenie wysłane';
+      })
+      .catch(function(){
+        // Fallback: klasyczna wysyłka formularza (bez JavaScriptu)
+        HTMLFormElement.prototype.submit.call(form);
+      });
+  });
+})();
+</script>
+</body>
+</html>

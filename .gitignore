@@ -1,0 +1,5 @@
+# Ustawienia lokalnego podglądu (Claude Code)
+.claude/
+
+# Pliki systemowe
+.DS_Store
