@@ -156,11 +156,14 @@ p{text-wrap:pretty}
 .hv-url{flex:1;max-width:200px;padding:3px 10px;border-radius:999px;background:var(--paper);border:1px solid var(--line);color:var(--faint);font-size:.72rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .hv-btn{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;font-size:.74rem;font-weight:500;background:var(--ink);color:var(--on-dark)}
 .hv-btn svg{width:12px;height:12px}
-.hv-form{display:grid;gap:8px;padding:12px 14px 14px}
-.hv-field{display:grid;gap:3px}
-.hv-field small{font-size:.72rem;color:var(--faint)}
-.hv-field i{font-style:normal;font-size:.84rem;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--bg)}
-.hv-form .hv-btn{justify-self:start;margin-top:4px}
+.hv-quiz{padding:14px 16px 16px}
+.hq-top{display:flex;align-items:center;gap:12px;font-size:.72rem;color:var(--faint);white-space:nowrap}
+.hq-bar{flex:1;height:4px;border-radius:4px;background:var(--soft);overflow:hidden}
+.hq-bar i{display:block;width:60%;height:100%;border-radius:inherit;background:var(--brand)}
+.hq-q{margin:14px 0 10px;font-size:1rem;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+.hq-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.hq-opts span{padding:12px 8px;border-radius:12px;border:1px solid var(--line);background:var(--bg);text-align:center;font-size:.84rem;color:var(--ink)}
+.hq-opts .is-on{border-color:var(--brand);background:#fff4ec;box-shadow:inset 0 0 0 1px var(--brand);font-weight:600}
 /* 3. Powiadomienia */
 /* Droga zapytania: poziomo na desktopie, pionowo na telefonie */
 .hv-body-wide{grid-template-columns:minmax(0,1fr)}
@@ -176,6 +179,7 @@ p{text-wrap:pretty}
 .hf-if .hf-dot{background:transparent;border:1.5px dashed var(--ink)}
 .hf-you .hf-time{color:var(--brand)}
 .hf-you .hf-dot{background:var(--brand);box-shadow:0 0 0 5px rgba(252,93,3,.15)}
+.hf-sms{display:block;max-width:24ch;margin-top:10px;padding:9px 12px;border-radius:14px 14px 14px 4px;background:var(--soft);color:var(--ink);font-size:.78rem;line-height:1.4;text-align:left}
 .hf-legend{display:flex;justify-content:center;gap:24px;margin-top:28px;font-size:.78rem;color:var(--faint)}
 .hf-legend span{display:inline-flex;align-items:center;gap:8px}
 .hf-legend i{width:8px;height:8px;border-radius:50%;background:var(--ink)}
@@ -381,7 +385,8 @@ b.hv-val{color:var(--ink);font-weight:600}
   .hf-time{padding:0;line-height:1.35}
   .hf-dot{margin-top:4px}
   .hf-row b{margin-top:0;max-width:none}
-  .hf-row small{grid-column:3}
+  .hf-row small,.hf-sms{grid-column:3}
+  .hf-sms{justify-self:start;margin-top:8px}
   .hf-row:not(:last-child)::after{top:26px;bottom:-14px;left:71.5px;width:1px;height:auto}
   .hf-dash::after{border-top:0;border-left:1px dashed var(--line-2)}
   .hf-legend{justify-content:flex-start;margin-top:16px}
@@ -566,16 +571,15 @@ b.hv-val{color:var(--ink);font-weight:600}
           <span class="hv-num" aria-hidden="true">2</span>
           <div class="hv-body">
             <div class="hv-text">
-              <h3>Pozyskanie zapytania</h3>
-              <p>Landing page przedstawia ofertę firmy i zbiera informacje o potencjalnym zleceniu, np. zakres prac, metraż i planowany termin.</p>
+              <h3>Zapytanie w kilku kliknięciach</h3>
+              <p>Zamiast długiego formularza klient odpowiada kliknięciami na kilka pytań: co chce wyremontować, jaki to metraż, kiedy chce zacząć i gdzie. Na końcu zostawia telefon. Więcej osób kończy zgłoszenie, a Ty od razu wiesz, z jakim zleceniem oddzwaniasz.</p>
             </div>
             <div class="hv-card hv-lp" aria-hidden="true">
               <div class="hv-chrome"><span class="dots"><i></i><i></i><i></i></span><span class="hv-url">twojafirma.pl/remont-lazienki</span></div>
-              <div class="hv-form">
-                <span class="hv-field"><small>Zakres prac</small><i>Remont łazienki</i></span>
-                <span class="hv-field"><small>Metraż</small><i>6 m²</i></span>
-                <span class="hv-field"><small>Planowany termin</small><i>Za 1–2 miesiące</i></span>
-                <span class="hv-btn">Wyślij zapytanie</span>
+              <div class="hv-quiz">
+                <div class="hq-top"><span>Krok 3 z 5</span><span class="hq-bar"><i></i></span></div>
+                <p class="hq-q">Kiedy chcesz zacząć?</p>
+                <div class="hq-opts"><span>Do miesiąca</span><span class="is-on">1–3 miesiące</span><span>3–6 miesięcy</span><span>Jeszcze nie wiem</span></div>
               </div>
             </div>
           </div>
@@ -585,13 +589,13 @@ b.hv-val{color:var(--ink);font-weight:600}
           <div class="hv-body hv-body-wide">
             <div class="hv-text">
               <h3>Obsługa zapytania</h3>
-              <p>Klient w minutę dostaje SMS z potwierdzeniem, a Ty powiadomienie o nowym zapytaniu. Jeśli nie oddzwonisz w ciągu 60 minut, dostajesz przypomnienie.</p>
+              <p>Klient w minutę dostaje SMS z potwierdzeniem, a Ty SMS z odpowiedziami klienta. Jeśli nie oddzwonisz w ciągu 60 minut, dostajesz przypomnienie.</p>
             </div>
             <!-- Droga zapytania: czarne kropki dzieją się automatycznie, pomarańczowa to kontakt firmy -->
             <div class="hv-flow" aria-hidden="true">
               <div class="hf-row"><span class="hf-time">0:00</span><span class="hf-dot"></span><b>Klient wysyła formularz</b></div>
               <div class="hf-row"><span class="hf-time">+1 min</span><span class="hf-dot"></span><b>SMS z potwierdzeniem do klienta</b></div>
-              <div class="hf-row hf-dash"><span class="hf-time">+1 min</span><span class="hf-dot"></span><b>Powiadomienie do Ciebie</b></div>
+              <div class="hf-row hf-dash"><span class="hf-time">+1 min</span><span class="hf-dot"></span><b>SMS do Ciebie</b><span class="hf-sms">Remont łazienki, 6 m², start za 1–2 mies., Pruszków. Jan, 600 xxx xxx</span></div>
               <div class="hf-row hf-if"><span class="hf-time">+60 min</span><span class="hf-dot"></span><b>Przypomnienie</b><small>jeśli nikt nie oddzwonił</small></div>
               <div class="hf-row hf-you"><span class="hf-time">Ty</span><span class="hf-dot"></span><b>Oddzwaniasz do klienta</b></div>
             </div>
@@ -733,7 +737,7 @@ b.hv-val{color:var(--ink);font-weight:600}
       <details><summary>Ile kosztuje współpraca?</summary><p>Cena zależy od zakresu i obszaru działania. Ustalamy ją po bezpłatnej konsultacji: dostajesz stałą miesięczną kwotę za obsługę. Budżet reklamowy opłacasz osobno, bezpośrednio w Google.</p></details>
       <details><summary>Jaki budżet reklamowy jest potrzebny?</summary><p>Zależy od okolicy i konkurencji. Na konsultacji pokażemy realne widełki dla Twojego obszaru, zanim cokolwiek wydasz.</p></details>
       <details><summary>Czy gwarantujecie konkretną liczbę zleceń?</summary><p>Nie. Uważaj na każdego, kto to obiecuje bez znajomości Twojej firmy. Gwarantujemy rzetelną pracę, pełny pomiar i jasne raporty, z których widzisz, co realnie daje reklama.</p></details>
-      <details><summary>Kiedy pojawią się pierwsze zapytania?</summary><p>Kampania startuje w ciągu 5 dni roboczych od otrzymania dostępów. Pierwszy raport dostajesz po 7 dniach, potem podsumowanie na koniec każdego miesiąca.</p></details>
+      <details><summary>Kiedy pojawią się pierwsze zapytania?</summary><p>Kampania startuje w ciągu 5 dni roboczych od otrzymania dostępów. Pierwszy raport dostajesz po 7 dniach, potem podsumowanie na koniec każdego miesiąca. Pierwsze 2–4 tygodnie to zbieranie danych i poprawianie kampanii. Zlecenia realnie oceniamy po 2–3 miesiącach, bo tyle trwa droga od zapytania do podpisanej umowy.</p></details>
       <details><summary>Na jak długo jest umowa?</summary><p>Umowa jest miesięczna. Po okresie testowym obowiązuje 30 dni wypowiedzenia. Konto reklamowe zawsze należy do Ciebie, także po zakończeniu współpracy.</p></details>
     </div>
   </div>
