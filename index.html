@@ -106,6 +106,7 @@ p{text-wrap:pretty}
 .phone{width:min(290px,100%);aspect-ratio:9/15.5;padding:10px;border-radius:46px;background:var(--ink);box-shadow:0 50px 90px -50px rgba(0,0,0,.45)}
 .phone-screen{position:relative;height:100%;display:flex;flex-direction:column;gap:10px;padding:54px 12px 16px;border-radius:37px;background:var(--bg)}
 .phone-screen::before{content:"";position:absolute;top:13px;left:50%;width:84px;height:24px;border-radius:999px;background:var(--ink);transform:translateX(-50%)}
+.phone-mark{position:absolute;top:18px;left:24px;width:32px;height:auto}
 .pn{display:grid;grid-template-columns:34px minmax(0,1fr);gap:10px;align-items:start;padding:12px;border-radius:18px;background:var(--paper);border:1px solid var(--line);box-shadow:0 12px 24px -18px rgba(0,0,0,.25);font-size:.8rem;line-height:1.35}
 .pn-ico{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--on-dark)}
 .pn-ico svg{width:16px;height:16px}
@@ -476,6 +477,7 @@ b.hv-val{color:var(--ink);font-weight:600}
       <figure class="hero-phone">
         <div class="phone" aria-hidden="true">
           <div class="phone-screen">
+            <svg class="phone-mark" viewBox="292 244 396 172"><path style="fill:var(--brand)" d="M292 416V338L407 244L490 312L575 244L688 338V416H631V358L575 313L518 360V416H461V360L407 313L349 360V416Z"/></svg>
             <div class="pn">
               <span class="pn-ico"><svg><use href="#i-bell"/></svg></span>
               <div><div class="pn-top"><b>Nowe zapytanie</b><small>teraz</small></div><p>Remont łazienki, 6 m² · start za 1–2 mies.</p></div>
